@@ -1,0 +1,176 @@
+*{
+	overflow:  hidden;
+font-family: 'Comic Neue', cursive;
+}
+
+p{
+  font-size: 20px;
+  font-style: none;
+  font-family: sans-serif;
+  text-decoration: none;
+  position: absolute;
+   bottom: 320px;
+    left: 917px;
+    color: #5AC3FF;
+    
+}
+body{
+
+}
+.background{
+  position: absolute;
+  margin-top: 0px;
+  width: 1920px;
+  height: 100%px;
+  z-index: 10;
+}
+#navbarNav{
+  font-size: 15px;
+ margin-left: 890px;
+
+
+}
+.offcan{
+  margin-left:20px ;
+  padding:  5px 7px 0px 7px;
+  border-radius: 5px;
+
+  border: .5px solid #000;
+  background: transparent;
+}
+.progress{
+  
+  height: 50px;
+  font-size: 12px;
+ margin-left: 50px;
+  width: 500px;
+   align-items: right;
+   top: 5px;
+   border: 1px solid #000;
+}
+#exampleModal{
+  z-index: 9000;
+    margin-top: 250px;
+    transition: all ease 1s;
+  }
+  .close{
+    color:#00FF97 ;
+  }
+  .hintbtn{
+  
+    cursor: pointer;
+    padding: none;
+    display: inline-flex;
+         position: absolute;
+       
+        	border: none;
+z-index: 20;
+   background: none;
+  }
+  
+  .hintbtn:active{
+    background: none;
+    border-style: none;
+    padding: none;
+  	background: none;
+  	outline: none;
+  }
+  .hintbtn:focus{
+      background: none;
+    border-style: none;
+    padding: none;
+    background: none;
+    outline: none;
+  }
+.closebtn{
+	 padding: 8px;
+	 border: none;
+	 color: white;
+    background-color:#00FF97 ;
+}
+.btn-close{
+ border-style: none;
+  border: none;
+      outline: none;
+}
+.btn-close:hover{
+   border-style: none;
+  border: none;
+      outline: none;
+}
+.btn-close:focus{
+    border: none;
+    border-style: none;
+    outline: none;
+}
+
+
+
+.key{
+  z-index: 1500;
+  position: absolute;
+  margin-top: 370px ;
+  right: 80px;
+  height: 75px;
+  width: 100px;
+
+}
+
+.door{
+    z-index: 20;
+position: absolute;
+margin-top: 222px;
+
+left: 855px;  
+
+  
+  transform-origin: 0% 0%;
+  transition: all 2.5s ease-in-out;
+}
+
+.dooropen{
+ transform: perspective(900px) translateZ(0px) translateX(0px) translateY(0px) rotateY(90deg);
+}
+
+
+
+
+.inputwrong{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.nxtbtn{
+  z-index: 10;
+  position: absolute;
+    display: inline-flex;
+    bottom: 380px;
+    left: 925px;
+     width: 80px;
+     height: 80px;
+     transition: all ease .2s;
+     border-style: none;
+    background: none;
+    cursor: pointer;
+
+}

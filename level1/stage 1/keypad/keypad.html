@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="/path/to/cdn/jquery.slim.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script type="text/javascript" src="keypad.js"></script>
+    <link rel="stylesheet" style="text/css" href="keypadstyle.css">  
+  <meta charset="utf-8">
+  <title></title>
+ 
+</head>
+<body>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#codeModal">
+ 
+</button>
+
+<!-- keypad -->
+<div class="modal fade" id="codeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    
+         <div id="pinpad"> 
+  <form >
+    <input type="text" id="password" /></br>
+    <input type="button" value="1" id="1" class="pinButton calc"/>
+    <input type="button" value="2" id="2" class="pinButton calc"/>
+    <input type="button" value="3" id="3" class="pinButton calc"/><br>
+    <input type="button" value="4" id="4" class="pinButton calc"/>
+    <input type="button" value="5" id="5" class="pinButton calc"/>
+    <input type="button" value="6" id="6" class="pinButton calc"/><br>
+    <input type="button" value="7" id="7" class="pinButton calc"/>
+    <input type="button" value="8" id="8" class="pinButton calc"/>
+    <input type="button" value="9" id="9" class="pinButton calc"/><br>
+    <input type="button" value="clear" id="clear" class="pinButton clear"/>
+    <input type="button" value="0" id="0 " class="pinButton calc"/>
+    <input type="button" value="enter" id="enter" class="pinButton enter"/>
+  </form>
+</div>
+     
+</div>
+      
+     
+      
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+*{
+  overflow: hidden;
+
+font-family: 'Comic Neue', cursive;
+text-decoration: none;
+}
+body{
+ background-image: url(images/binary.png);
+ background-repeat: no-repeat;
+
+}
+
+.startbtn{
+  border: 1px solid #000;
+  border-radius:20px ;
+  padding:  25px;
+  position: absolute;
+  display: inline-flex;
+  left:900px;
+  top: 60%;
+  width:auto;
+  height: auto;
+  font-size: 30px;
+  color: #000;
+  background-color:#fff;
+}
+
+.startbtn:hover {
+  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  background-color: #000;
+  color: #fff;
+}
+
+
+h1{
+  font-size: 150px;
+  position: relative;
+  z-index: 10;
+  color:#fff ;
+
+ -webkit-text-stroke: 3px black;
+}
+h2{
+ font-size: 40px;
+ text-align: center;
+ color: #fff;
+ -webkit-text-stroke: 1.2px black;
+ background-color: #fff;
+ z-index: 10;
+}
+
+@-moz-document url-prefix(){
+h1{
+  font-size: 150px;
+  position: relative;
+  z-index: 10;
+  color:#fff ;
+
+ -webkit-text-stroke: 3px black;
+ }
+h2{
+ font-size: 40px;
+ text-align: center;
+ color: #fff;
+ -webkit-text-stroke: 1.2px black;
+ background-color: #fff;
+ z-index: 10;
+}
+  }
+.typewriter h1 {
+  top: 300px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .08em solid black ; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .45s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #000; }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

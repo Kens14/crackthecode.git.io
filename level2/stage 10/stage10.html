@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="stage10.css">
+
+	<script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	
+
+
+  <title>Stage 10</title>
+ 
+<script src="https://kit.fontawesome.com/14bbf5a6ea.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">Funminds</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     <div class="progress">
+  <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">stage 10</div>
+</div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+
+      </ul>
+<button class="offcan " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-bars"></i></button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">How To solve</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+      <h2 style="font-size: 20px;">Hi,<br> To solve this riddle you havr to enter the answer in the input box below.
+   <br> The picture describes the riddle.<br> Also there are hint buttons for every picture.</h2>
+  </div>
+</div>
+   </div>
+</div>
+</nav>
+
+
+<div id="bg">
+  <center><img  src="images/bg.png" style="margin-top: 60px;width: 1200px; z-index: 10;"> <input  class="input" type="text" id="ans" name="Answer" placeholder="Answer" ><button class="button" id="enter" onclick="check()">submit</button></center>
+    
+
+ 
+ 
+
+
+  </div>
+
+ <button id="hintbtn" type="hintbtn" class="hintbtn" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/idea.png"></button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">I may seem real yet I am not,
+Once you're gone I'm often forgot.
+Time here stretches and it shrinks,
+It all depends on how you think.
+I may be good, I may be bad,
+I may be the same as one you've had.
+What am I?</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </button>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="closebtn " data-bs-dismiss="modal">Close</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<!--wrong input-->
+
+<div class="modal fade" id="wrongModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="margin-top: 250px;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">You have entered the wrong answer. Click on the ? for a hint.</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </button>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="closebtn " data-bs-dismiss="modal">Try again</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+</body>
+<script type="text/javascript">
+ function hinting() {
+        document.getElementById('hintbtn').style.animation = 'shake 1.82s cubic-bezier(.3,.97,.198,.9) both';
+    }
+
+   
+
+ 
+
+
+    function check() {
+    var score = 0; 
+    
+    var sa = document.getElementById("ans").value;
+        var str = 'A Dream';
+        var str1= 'A dream';
+        var str2= 'Dream';
+        var str3='dream'; 
+
+          if(sa==str || sa==str1 || sa==str2 || sa==str3)
+          {       
+                           
+             document.getElementById("bg").style.display= "none" ;
+             document.getElementById("hintbtn").style.display= "none" ;
+             
+              score= 250;
+              localStorage.setItem("textvalue",score);
+             window.location = "nextstagecard.html";
+         
+            
+             
+          }
+          else {
+              
+                 $("#wrongModal").modal("toggle");
+          }
+  }
+ 
+</script>
+</html>
+

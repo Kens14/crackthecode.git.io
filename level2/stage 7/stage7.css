@@ -1,0 +1,195 @@
+*{
+	overflow:  hidden;
+font-family: 'Comic Neue', cursive;
+}
+
+p{
+  font-size: 20px;
+  font-style: none;
+  font-family: sans-serif;
+  text-decoration: none;
+  position: absolute;
+   bottom: 320px;
+    left: 917px;
+    color: #5AC3FF;
+    
+}
+body{
+
+}
+.bg{
+  display: inline-flex;
+  position: absolute;
+  margin-top: 120px;
+  left: 440px;
+  width: 800px;
+  height: 100%px;
+
+}
+
+#navbarNav{
+  font-size: 15px;
+ margin-left: 890px;
+
+
+}
+.offcan{
+  margin-left:20px ;
+  padding:  5px 7px 0px 7px;
+  border-radius: 5px;
+
+  border: .5px solid #000;
+  background: transparent;
+}
+.progress{
+  
+  height: 30px;
+  font-size: 12px;
+ margin-left: 50px;
+  width: 500px;
+
+   top: 5px;
+   border: 1px solid #000;
+}
+#exampleModal{
+  z-index: 9000;
+    margin-top: 250px;
+    transition: all ease 1s;
+  }
+  .close{
+    color:#00FF97 ;
+  }
+  .hintbtn{
+    height: 200px;
+    width: 150px;
+    cursor: pointer;
+    padding: none;
+    display: inline-flex;
+         position: absolute;
+         left: 1050px;
+         top: 370px;  
+        	border: none;
+   z-index: 20;
+   background: none;
+ 
+  
+  }
+
+  .hintbtn:active{
+    background: none;
+    border-style: none;
+    padding: none;
+  	background: none;
+  	outline: none;
+  }
+  .hintbtn:focus{
+      background: none;
+    border-style: none;
+    padding: none;
+    background: none;
+    outline: none;
+  }
+.closebtn{
+	 padding: 8px;
+	 border: none;
+	 color: white;
+    background-color:#00FF97 ;
+}
+.btn-close{
+ border-style: none;
+  border: none;
+      outline: none;
+}
+.btn-close:hover{
+   border-style: none;
+  border: none;
+      outline: none;
+}
+.btn-close:focus{
+    border: none;
+    border-style: none;
+    outline: none;
+}
+
+.button{
+   position: absolute;
+  margin-top: 845px;
+  left: 53%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 2px 30px;
+  border: 1px solid #000;
+  cursor: pointer;
+  border-radius: 2px;
+  text-align: center;
+}
+.button:hover{
+  background-color: black;
+  color: white;
+}
+
+.input{
+   
+    
+    position: absolute;
+  left: 800px;
+  margin-top: 830px;
+  width: 160px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 2px;
+
+}
+.input::placeholder{
+   font-size: 15px;
+   padding:  5px;
+}
+
+
+
+
+.inputwrong{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, -9px);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 8px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 2px);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, -8px, 0);
+  }
+}
+.card{
+  opacity: 0%;
+}
+
+.nxtbtn{
+  z-index: 10;
+  position: absolute;
+    display: inline-flex;
+    bottom: 380px;
+    left: 925px;
+     width: 80px;
+     height: 80px;
+     transition: all ease .2s;
+     border-style: none;
+    background: none;
+    cursor: pointer;
+
+}
