@@ -48,6 +48,17 @@ body{
    top: 5px;
    border: 1px solid #000;
 }
+#solutionModal{
+    z-index: 9000;
+    margin-top: 250px;
+    transition: all ease 1s;
+  }
+  .solutionbtn{
+    background-color:#2B70FF;
+    border: none;
+    color: #fff;
+  }
+
 #exampleModal{
   z-index: 9000;
     margin-top: 250px;

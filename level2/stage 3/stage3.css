@@ -56,6 +56,16 @@ body{
     margin-top: 250px;
     transition: all ease 1s;
   }
+  #solutionModal{
+    z-index: 9000;
+    margin-top: 250px;
+    transition: all ease 1s;
+  }
+  .solutionbtn{
+    background-color:#2B70FF;
+    border: none;
+    color: #fff;
+  }
   .close{
     color:#00FF97 ;
   }

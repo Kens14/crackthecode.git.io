@@ -52,7 +52,7 @@ h2{
  z-index: 10;
 }
 
-  @-moz-document url-prefix(){
+@-moz-document url-prefix(){
 h1{
   font-size: 150px;
   position: relative;
